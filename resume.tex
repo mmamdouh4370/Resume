@@ -1,0 +1,227 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\usepackage{calc} % added
+\newcommand{\resumeSubSubheadingLeft}[2]{% % added
+\begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+\end{description}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohammed Mamdouh} \\ \vspace{1pt}
+    \faPhone\small  \;917-702-4473 $|$ 
+    \faEnvelope\href{mailto:mmamdouh4370@gmail.com}{\underline{\;mmamdouh4370@gmail.com}} $|$ 
+    \faLinkedin\href{https://www.linkedin.com/in/mohmamdouh/}{\underline{\;linkedin.com/in/mohmamdouh}} $|$
+    \faGithub\href{https://github.com/mmamdouh4370}{\underline{\;github.com/mmamdouh4370}}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Central Florida/Burnett Honors College}{May 2026}
+      {Bachelor of Science in Computer Science} {3.7 GPA}
+    \resumeSubSubheadingLeft
+      {Relevant Coursework:}
+      {Data Structures and Algorithms I \& II, Object-Oriented Programming, Computer Logic, Cybersecurity, Systems Software, Discrete Math, Calc I \& II}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, HTML/CSS, SQL, Java, Python, C/C++, Assembly, C\#, Go} \\
+     \textbf{Technologies}{: NextJs/React, Svelte, Tailwind, PostgreSQL, NodeJs, ExpressJs, Flask, AWS, Vercel, REST, Prisma, MongoDB, GraphQL, Go-Jet, Clerk} \\
+     \textbf{Libraries/Tools}{: Numpy, Pandas, Keras, Tensorflow, PyTorch, Scikit-Learn, Seaborn, Librosa, Matplotlib, Git, Linux, Figma, Google Cloud, Microsoft Products} \\
+    }}
+ \end{itemize}
+ 
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {AI Software Developer Intern}{Jul. 2024 -- Present}
+      {Resilience, Inc}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{Speech and Emotion recognition AI} model to assist K-12 students with mental health learning and understanding}
+        \resumeItem{Increased \textbf{model accuracy} by \textbf{45\%} through \textbf{data augmentation}, batch \textbf{normalization}, weight adjustment, and audio centered \textbf{feature extraction}}
+        \resumeItem{Collaborated to combine new additions to the model and effectively run tests through simulated data and various acted out datasets}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Digital Summer Instructor/Tutor}{May 2024 -- Aug. 2024}
+      {iD Tech}{Remote}
+      \resumeItemListStart
+      \resumeItem{Mentored students on game, chatbot, terminal, and AI project development}
+        \resumeItem{Tutored \textbf{30+ kids} aged 9-17 on \textbf{programming fundamentals} and \textbf{AI/ML concepts}}
+        
+        \resumeItem{Helped redesign and \textbf{improve} various \textbf{AI course} plans to match modern frameworks and technologies such as \textbf{PyTorch and Pandas}}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\href{https://github.com/DRobinson4105/Simply-ASL}{\underline{{\textbf{Simply-ASL}}}} $|$ \emph{PyTorch, Flask, Swift, OpenCV}}{}
+          \resumeItemListStart
+            \resumeItem{Enginereed a \textbf{Speech to ASL} mobile app using \textbf{inference and computer vision}}
+            \resumeItem{Created an \textbf{LSTM model} for \textbf{intermediate frame generation} using PyTorch}
+            \resumeItem{Connected and mantained the framework through \textbf{webhooks and API structuring}}
+            \resumeItem{Processed and created a dataset for real time \textbf{2D pose estimation} using inference with \textbf{Meta's Sapien model}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+           {\href{https://bouquetgen.vercel.app/}{\underline{{\textbf{Bouquet.Gen}}}} $|$ \emph{NextJs, Flask, PostgreSQL, Machine Learning}}{}
+          \resumeItemListStart
+              \resumeItem{Implemented \textbf{OpenAI's} API to create dynamic bouquets based on user input}
+            \resumeItem{Utilized Figma for \textbf{Ui/UX planning}, Vercel for deployment, and Git for version control}
+            \resumeItem{Developed a full-stack web application with Flask serving as a\textbf{ REST API} backend and React as the frontend}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{COPR} $|$ \emph{NextJs, Go, Go-Jet, PostgreSQL, Tailwind}}{}
+          \resumeItemListStart
+          \resumeItem{Developed a web app to improve coding practice routines through \textbf{statistical analysis} leading to a \textbf{~200\% increase} in productivity} 
+          \resumeItem{Implemented the Sessions and Account data \textbf{backend routes} to handle \textbf{live authenticated} coding sessions.}
+          \resumeItem{Lead frontend developer responsible for designing and implementing the frontend in full}
+            
+            
+            
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\section{Campus Involvement}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://www.acmucf.org/}{\underline{{\textbf{ACM Website Backend}}}} $|$ \emph{NodeJS, ExpressJs, MongoDB, Javascript, HTML}}{Jan 2024 -- April 2024}
+          \resumeItemListStart
+            \resumeItem{Worked with a large team to develop a backend for ACM's main website}
+            \resumeItem{Created a \textbf{CRUD} system to store club events to be used internally and display on the main website}
+            \resumeItem{Implemented a \textbf{fully authenticated panel} allowing for a centralized center for club duties improving club efficiency}
+          \resumeItemListEnd
+      \resumeSubHeadingListEnd 
+\end{document}
