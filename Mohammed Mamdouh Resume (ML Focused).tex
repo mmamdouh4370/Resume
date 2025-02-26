@@ -48,7 +48,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -131,30 +131,19 @@
       {Bachelors of Science in Computer Science} {3.7 GPA}
     \resumeSubSubheadingLeft
       {Relevant Coursework:}
-      {Data Structures and Algorithms I \& II, Object-Oriented Programming \& Design, Computer Logic, Cybersecurity, Systems Software, Discrete Math I \& II, Calc I \& II, Linear Algebra I, Statistics I \& II}
+      {Data Structures and Algorithms II, Software Engineering, Linear Algebra, Stats II, Calc II}
   \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Java, C/C++, JavaScript, TypeScript, SQL, Assembly, Go, C\#} \\
-     \textbf{Libraries/Tools}{: Numpy, Pandas, Keras, Tensorflow, PyTorch, Scikit-Learn, Seaborn, Librosa, Matplotlib, Jupyter Notebook, Git, Linux, Figma, Google Cloud, Microsoft Products} \\
-     \textbf{Technologies}{: NextJs/React, Svelte, Tailwind, PostgreSQL, NodeJs, ExpressJs, Flask, AWS, Vercel, REST, Prisma, MongoDB, GraphQL, Go-Jet, Clerk} \\
+     \textbf{Languages}{: Python, Java, C/C++, JavaScript, TypeScript, SQL, Go, C\#} \\
+     \textbf{Libraries/Tools}{: Numpy, Pandas, Keras, Tensorflow, PyTorch, Scikit-Learn, Seaborn, Librosa, Matplotlib, Git, Linux} \\
+     \textbf{Technologies}{: Docker, AWS, PostgreSQL, Node.Js, Express.Js, Flask, Vercel, Prisma, MongoDB, GraphQL} \\
     }}
  \end{itemize}
  
-%-----------RESEARCH EXPERIENCE-----------
-\section{Research Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Research Assistant}{Feb. 2025 -- Present}
-      {FData Lab}{Orlando, FL}
-      \resumeItemListStart
-        \resumeItem{Researched \textbf{Graph Neural Networks (GNNs)}, \textbf{Graph Convolutional Networks (GCNs)}, and \textbf{Large Language Models (LLMs)} for machine learning on \textbf{static} and \textbf{temporal graphs}.}  
-        \resumeItem{Developed models for \textbf{node classification}, \textbf{link prediction}, and \textbf{graph-based knowledge extraction} in dynamic graph settings.}  
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
 %-----------WORK EXPERIENCE-----------
 \section{Work Experience}
@@ -162,19 +151,27 @@
     \resumeSubheading
       {Incoming AI Engineer Intern}{May 2025 -- Aug. 2025}
       {Universal Creative}{Orlando, FL}
-  
+
+    \resumeSubheading
+    {Research Assistant}{Feb. 2025 -- Present}
+    {UCF FData Lab}{Orlando, FL}
+    \resumeItemListStart
+      \resumeItem{Researched \textbf{Graph Neural Networks (GNNs), Graph Convolutional Networks (GCNs), and Large Language Models (LLMs)} for machine learning on static and temporal graphs.}
+      \resumeItem{Developed models for \textbf{node classification, link prediction, and graph-based knowledge} extraction given dynamic graph settings}
+    \resumeItemListEnd
+
     \resumeSubheading
       {AI Software Developer Intern}{Jul. 2024 -- Present}
       {Resilience, Inc}{Remote}
       \resumeItemListStart
         \resumeItem{Developed a \textbf{Speech and Emotion recognition AI} model to assist K-12 students with mental health learning and understanding}
-        \resumeItem{Increased \textbf{model accuracy} by \textbf{45\%} through \textbf{data augmentation}, batch \textbf{normalization}, weight adjustment, and audio centered \textbf{feature extraction}}
+        \resumeItem{Increased \textbf{model accuracy} by \textbf{45\%} through \textbf{data augmentation}, batch normalization, weight adjustment, and audio centered \textbf{feature extraction}}
         \resumeItem{Collaborated to combine new additions to the model and effectively run tests through simulated data and various acted out datasets}
       \resumeItemListEnd
 
     \resumeSubheading
       {Digital Summer Instructor/Tutor}{May 2024 -- Aug. 2024}
-      {iD Tech}{Remote}
+      {iD Tech}{California}
       \resumeItemListStart
         \resumeItem{Mentored students on game, chatbot, terminal, and AI project development}
         \resumeItem{Tutored \textbf{30+ kids} aged 9-17 on \textbf{programming fundamentals} and \textbf{AI/ML concepts}}
@@ -206,13 +203,6 @@
             \resumeItem{Created an \textbf{LSTM model} for \textbf{intermediate frame generation} using PyTorch}
             \resumeItem{Processed and created a dataset for real time \textbf{2D pose estimation} using inference with \textbf{Meta's Sapien model}}
           \resumeItemListEnd
-
-      \resumeProjectHeading
-           {\href{https://bouquetgen.vercel.app/}{\underline{{\textbf{Bouquet.Gen}}}} $|$ \emph{NextJs, Flask, PostgreSQL, Machine Learning}}{}
-          \resumeItemListStart
-            \resumeItem{Implemented \textbf{OpenAI's} API to create dynamic bouquets based on user input}
-`'            \resumeItem{Developed a full-stack web application with Flask serving as a\textbf{REST API} backend and React as the frontend}
-          \resumeItemListEnd
     \resumeSubHeadingListEnd
 \section{Campus Involvement}
     \resumeSubHeadingListStart
@@ -221,12 +211,11 @@
       {Knight Hacks}{Orlando, FL}
       \resumeItemListStart
         \resumeItem{Coordinating and running Knight Hacks (a \textbf{600+ attendee} annual hackathon at UCF) with a \textbf{20+ person team} to handle logistics, sponsorships, advertising, and event planning.}
-        \resumeItem{Overseeing event operations, including securing sponsors, planning themes, challenges, workshops, prizes, and attendee experiences.}
         \resumeItem{Mentoring teams in the \textbf{Project Launch} program, guiding \textbf{20+ AI/ML and Web Development projects} from debugging to implementation.}
       \resumeItemListEnd
 
       \resumeProjectHeading
-          {\href{https://www.acmucf.org/}{\underline{{\textbf{ACM Website Backend}}}} $|$ \emph{NodeJS, ExpressJs, MongoDB, Javascript, HTML}}{Jan 2024 -- April 2024}
+          {\href{https://www.acmucf.org/}{\underline{{\textbf{ACM Website Backend}}}} $|$ \emph{NodeJS, Express.Js, MongoDB, Javascript, HTML}}{Jan 2024 -- April 2024}
           \resumeItemListStart
             \resumeItem{Worked with a large team to develop a backend for ACM's main website}
             \resumeItem{Created a \textbf{CRUD} system to store club events to be used internally and display on the main website}
