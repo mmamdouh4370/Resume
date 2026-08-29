@@ -1,0 +1,206 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\setlist[itemize]{left=5pt..1.2em}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+\titlespacing{\section}{0pt}{13pt}{12pt}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\usepackage{calc} % added
+\newcommand{\resumeSubSubheadingLeft}[2]{% % added
+\begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+\end{description}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Mohammed Mamdouh} \\ \vspace{1pt}
+    \faPhone\small  \;917-702-4473 $|$ 
+    \faEnvelope\href{mailto:mmamdouh4370@gmail.com}{\underline{\;mmamdouh4370@gmail.com}} $|$ 
+    \faLinkedin\href{https://www.linkedin.com/in/mohmamdouh/}{\underline{\;linkedin.com/in/mohmamdouh}} $|$
+    \faGithub\href{https://github.com/mmamdouh4370}{\underline{\;github.com/mmamdouh4370}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {Georgia Institute of Technology}{Dec. 2028}
+  {Incoming M.S. in Computer Science}{}
+\resumeSubheading
+  {University of Central Florida}{May 2026}
+  {B.S. of Science in Computer Science, Honors $|$ Minor in Intelligent Robotic Systems}{3.8 GPA}
+    \resumeSubSubheadingLeft
+      {Relevant Coursework:}
+      {Machine Learning, Computer Vision, DSA II, Linear Algebra, Statistics II, Robotics}
+  \resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AI Engineer}{May 2025 -- Present}
+      {{\href{https://corporate.universaldestinationsandexperiences.com/universal-creative/}{\underline{Universal Creative}}}}{Orlando, FL}
+        \resumeItemListStart
+            \resumeItem{Developed and deployed an internal \textbf{speech to text transcription backend} with \textbf{speaker diarization} for up to three overlapping voices, incorporating advanced \textbf{noise filtering} to achieve high quality live transcriptions}
+            \resumeItem{Designed and deployed a \textbf{Retrieval Augmented Generation (RAG)} system using \textbf{custom embeddings and vector search} over hundreds of manuals, supporting semantic search for \textbf{100+ internal users}}
+            \resumeItem{Collaborated on a \textbf{perception based system} for dark ride environments, creating a \textbf{human in the loop annotation tool} to refine baseline model accuracy}
+            \resumeItem{Built an automated \textbf{text classification pipeline} categorizing structured reports into \textbf{7+ internal classes}, integrating results with SQL and Excel based workflows used by \textbf{30+ employees}}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Contract AI Engineer}{Mar. 2025 -- Aug. 2025}
+      {Contract/Freelance NDA}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Developed a multimodal username classification system \textbf{(90.7\% accuracy, 93.6\% precision, $<$ 1s latency)} using \textbf{sentence transformers}, \textbf{phoneme encoders}, and \textbf{DTW similarity} serving \textbf{10000+ users} in production}
+        \resumeItem{Engineered a tagging pipeline combining \textbf{semantic}, \textbf{phonetic}, and \textbf{structural embeddings} via \textbf{Flask} optimized for low-latency inference and concurrent batch updates}
+        \resumeItem{\textbf{Scraped and labeled} a cross platform dataset of usernames to build a high quality baseline name to tag dataset}
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {Research Assistant}{Feb. 2025 -- Jan. 2026}
+      {{\href{https://cakcora.github.io/}{\underline{UCF FData Lab}}}}{Orlando, FL}
+      \resumeItemListStart
+        \resumeItem{Benchmarked foundational and temporal \textbf{GNNs} (\textbf{DySAT}, \textbf{Roland}, \textbf{EvolveGCN}, \textbf{GraphAny}) on dynamic node/link/graph prediction using \textbf{PyTorch-Geometric} and \textbf{NetworkX}}
+        \resumeItem{Developed a method using \textbf{topological persistence} to adapt \textbf{learning rate schedulers} across temporal graph snapshots, achieving an average \textbf{14\% accuracy increase} on SOTA temporal GNNs}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {AI Software Developer Intern}{Jul. 2024 -- Dec. 2024}
+    %   {{\href{https://github.com/DRobinson4105/Simply-ASL}{\underline{Resilience, Inc}}}}{Tampa, FL}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed a multi-class \textbf{speech + emotion recognition} pipeline using a from scratch hybrid \textbf{2D CNN + LSTM} made to help K-12 mental health learning and understanding}
+    %     \resumeItem{Boosted \textbf{F1 score by 45\%}, raising accuracy to \textbf{89\%} via \textbf{audio centric feature extraction}, batch normalization, and data augmentation}
+    %   \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+          {\href{https://devpost.com/software/birdseye}{\underline{\textbf{BirdsEye}}} (1st at Waymo \& Assurant at ShellHacks 2025) $|$ \emph{YOLOv8, OpenCV, React, Flask}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a navigation app, integrating live \textbf{traffic camera feeds} from FDOT with user \textbf{Google Maps routes} to deliver lane-level \textbf{speed, congestion, and obstacle analysis} information} 
+            \resumeItem{Engineered backend pipelines for live video ingestion using \textbf{ffmpeg} and \textbf{YOLOv8} object detection to track vehicles and compute average lane speeds across multiple cameras}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+          {\href{https://github.com/DRobinson4105/ucf-act}{\underline{\textbf{ACT: Autonomous Campus Taxi}}} $|$ \emph{ROS2, Nav2, OpenStreetMap, C++}}{}
+          \resumeItemListStart
+            \resumeItem{Built a physical \textbf{fully autonomous, rideable campus taxi}, enabling live \textbf{student pickup and dropoff} using onboard perception and navigation}
+            \resumeItem{Designed the \textbf{global navigation stack} using \textbf{A*} routing over \textbf{OpenStreetMap} data, generating polyline routes for autonomous pickup and dropoff across a live campus environment}
+            \resumeItem{Implemented \textbf{sensor based local path updating}, fusing \textbf{camera, LiDAR, and ultrasonic} inputs into real-time costmaps to adapt global routes for dynamic obstacle avoidance and safe navigation}
+         \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, TypeScript, JavaScript, C++, SQL, Java, Go, C\#, HTML/CSS} \\
+     \textbf{AI/ML}{: PyTorch, TensorFlow, Keras, Scikit-Learn, Pandas, NumPy, Librosa, NetworkX, OpenCV, YOLOv8} \\
+     \textbf{Web/Backend}{: React, React Router, Vite, Tailwind, Flask, FastAPI, Hono, Node.js, Express.js} \\
+     \textbf{Data/Infra}{: PostgreSQL, SQLite, MongoDB, Docker, AWS, Git, Linux, Vitest, Pytest} \\
+    }}
+ \end{itemize}
+ 
+\end{document}
